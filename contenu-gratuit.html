@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenu Gratuit - Formateur Certifié Microsoft</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #198754;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
+        }
+        
+        .resource-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background: #005a9e;
+            color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chalkboard-teacher me-2"></i>
+                IGNAGALI ZIAKRABA KALZILKI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Formations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                            <li><a class="dropdown-item" href="formation-excel.html">Formation Excel</a></li>
+                            <li><a class="dropdown-item" href="formation-powerbi.html">Formation Power BI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="consultanceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Consultance
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="consultanceDropdown">
+                            <li><a class="dropdown-item" href="consultance-excel.html">Consultance Excel</a></li>
+                            <li><a class="dropdown-item" href="consultance-powerbi.html">Consultance Power BI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="contenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenu Gratuit</a>
+                        <ul class="dropdown-menu" aria-labelledby="contenuDropdown">
+                            <li><a class="dropdown-item active" href="contenu-gratuit.html">Toutes les ressources</a></li>
+                            <li><a class="dropdown-item" href="contenu-modeles.html">Modèles Excel</a></li>
+                            <li><a class="dropdown-item" href="contenu-guide.html">Guide pratique &amp; E-book</a></li>
+                            <li><a class="dropdown-item" href="contenu-tutos.html">Tutoriels Vidéo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Ressources Gratuites</h1>
+                    <p class="lead">Des outils et formations gratuits pour booster vos compétences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Modèles Excel -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card shadow h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-file-excel resource-icon text-success"></i>
+                            <h4 class="card-title">Modèles Excel Gratuits</h4>
+                            <p class="card-text">Des modèles professionnels prêts à l'emploi pour gagner du temps</p>
+                            <div class="resource-list text-start">
+                                <p><i class="fas fa-check text-success me-2"></i>Dashboard de suivi commercial</p>
+                                <p><i class="fas fa-check text-success me-2"></i>Gestion de budget personnel</p>
+                                <p><i class="fas fa-check text-success me-2"></i>Planning de projet</p>
+                                <p><i class="fas fa-check text-success me-2"></i>Tableau de bord RH</p>
+                            </div>
+                            <a href="#" class="download-btn mt-3">
+                                <i class="fas fa-download me-2"></i>Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutoriels Vidéo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card shadow h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-video resource-icon text-danger"></i>
+                            <h4 class="card-title">Tutoriels Vidéo</h4>
+                            <p class="card-text">Accédez à nos formations vidéo gratuites sur YouTube</p>
+                            <div class="resource-list text-start">
+                                <p><i class="fas fa-play-circle text-danger me-2"></i>Excel : Les 10 fonctions essentielles</p>
+                                <p><i class="fas fa-play-circle text-danger me-2"></i>Power BI : Premier dashboard en 1h</p>
+                                <p><i class="fas fa-play-circle text-danger me-2"></i>VBA : Vos premières macros</p>
+                            </div>
+                            <a href="#" class="download-btn mt-3">
+                                <i class="fab fa-youtube me-2"></i>Voir les Vidéos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide PDF -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card shadow h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-book resource-icon text-warning"></i>
+                            <h4 class="card-title">Guides Pratiques</h4>
+                            <p class="card-text">Des guides complets pour maîtriser les outils Microsoft</p>
+                            <div class="resource-list text-start">
+                                <p><i class="fas fa-file-pdf text-danger me-2"></i>Guide Excel Avancé (50 pages)</p>
+                                <p><i class="fas fa-file-pdf text-danger me-2"></i>Power BI pour débutants</p>
+                                <p><i class="fas fa-file-pdf text-danger me-2"></i>VBA : Automatisation complète</p>
+                            </div>
+                            <a href="#" class="download-btn mt-3">
+                                <i class="fas fa-download me-2"></i>Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fiches Mémo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card shadow h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-sticky-note resource-icon text-success"></i>
+                            <h4 class="card-title">Fiches Mémo</h4>
+                            <p class="card-text">Des aide-mémoire PDF pour les fonctions essentielles</p>
+                            <div class="resource-list text-start">
+                                <p><i class="fas fa-cheatsheet me-2 text-info"></i>Fonctions Excel avancées</p>
+                                <p><i class="fas fa-cheatsheet me-2 text-info"></i>Syntaxe DAX Power BI</p>
+                                <p><i class="fas fa-cheatsheet me-2 text-info"></i>Commandes VBA courantes</p>
+                                <p><i class="fas fa-cheatsheet me-2 text-info"></i>Raccourcis clavier</p>
+                            </div>
+                            <a href="#" class="download-btn mt-3">
+                                <i class="fas fa-download me-2"></i>Télécharger
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Webinaires -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card shadow h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-desktop resource-icon text-success"></i>
+                            <h4 class="card-title">Webinaires Gratuits</h4>
+                            <p class="card-text">Participez à nos prochains webinaires en direct</p>
+                            <div class="resource-list text-start">
+                                <p><i class="fas fa-calendar me-2 text-success"></i>Excel : Dashboard dynamique</p>
+                                <p><i class="fas fa-calendar me-2 text-success"></i>Power BI : Visualisations avancées</p>
+                                <p><i class="fas fa-calendar me-2 text-success"></i>VBA : Automatisation reports</p>
+                                <p><i class="fas fa-calendar me-2 text-success"></i>Prochain webinaire : [Date]</p>
+                            </div>
+                            <a href="#" class="download-btn mt-3">
+                                <i class="fas fa-user-plus me-2"></i>S'inscrire
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communauté -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card resource-card shadow h-100">
+                        <div class="card-body p-4 text-center">
+                            <i class="fas fa-users resource-icon text-success"></i>
+                            <h4 class="card-title">Communauté</h4>
+                            <p class="card-text">Rejoignez notre groupe d'entraide et partage</p>
+                            <div class="resource-list text-start">
+                                <p><i class="fab fa-facebook me-2 text-primary"></i>Groupe Facebook privé</p>
+                                <p><i class="fab fa-linkedin me-2 text-info"></i>Réseau LinkedIn</p>
+                                <p><i class="fab fa-instagram me-2 text-indigo"></i>Instagram</p>
+                                <p><i class="fas fa-question-circle me-2 text-warning"></i>Support communautaire</p>
+                            </div>
+                            <a href="#" class="download-btn mt-3">
+                                <i class="fas fa-sign-in-alt me-2"></i>Rejoindre
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h3 class="mb-3">Restez Informé</h3>
+                    <p class="lead mb-4">Recevez nos nouvelles ressources gratuites directement dans votre boîte email</p>
+                    <form class="row g-3 justify-content-center">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" placeholder="Votre email">
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit" class="btn btn-success btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>S'abonner
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+                    <p>Expert en Excel, Power BI, VBA et KoboToolbox</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Email: ignagalizk@gmail.com</p>
+                    <p>Tél: +235 60 88 71 18</p>
+                    <p>Tél: +235 98 53 98 78</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

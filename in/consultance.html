@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultance - Formateur Certifié Microsoft</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #198754;
+            --dark-blue: #198754;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
+        }
+        
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .consulting-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .process-step {
+            border-left: 3px solid var(--primary-blue);
+            padding-left: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chalkboard-teacher me-2"></i>
+                IGNAGALI ZIAKRABA KALZILKI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formations.html">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="consultance.html">Consultance</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenu Gratuit</a>
+                        <ul class="dropdown-menu" aria-labelledby="contenuDropdown">
+                            <li><a class="dropdown-item" href="../contenu-modeles.html">Modèles Excel</a></li>
+                            <li><a class="dropdown-item" href="../contenu-guide.html">Guide pratique &amp; E-book</a></li>
+                            <li><a class="dropdown-item" href="../contenu-tutos.html">Tutoriels Vidéo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Services de Consultance</h1>
+                    <p class="lead">Optimisez vos processus et boostez votre productivité avec des solutions sur mesure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-center">
+                <!-- Audit Excel -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-search consulting-icon text-success"></i>
+                            <h4 class="card-title">Audit Excel &  Automatisation VBA</h4>
+                            <p class="card-text">Analyse complète de vos fichiers Excel et optimisation de vos processus</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Diagnostic des performances</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Optimisation des formules</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Recommandations d'amélioration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solutions Power BI -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-chart-line consulting-icon text-warning"></i>
+                            <h4 class="card-title">Solutions Power BI</h4>
+                            <p class="card-text">Développement de tableaux de bord sur mesure pour votre business</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Conception de rapports</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Automatisation des données</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Formation utilisateurs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Automatisation VBA -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card service-card shadow text-center h-100">
+                        <div class="card-body p-4">
+                            <i class="fas fa-chart-column consulting-icon text-secondary"></i>
+                            <h4 class="card-title">Analyse des données</h4>
+                            <p class="card-text">Développement de macros pour automatiser vos tâches répétitives</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-success me-2"></i>Analyse des processus</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Développement sur mesure</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Documentation complète</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Mon Processus de Consultance</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="process-step">
+                        <h4><span class="badge bg-success me-3">1</span> Analyse des Besoins</h4>
+                        <p>Rencontre pour comprendre vos défis et objectifs spécifiques. Audit de vos processus actuels.</p>
+                    </div>
+                    <div class="process-step">
+                        <h4><span class="badge bg-success me-3">2</span> Proposition Sur Mesure</h4>
+                        <p>Élaboration d'une solution adaptée avec planning, livrables et budget détaillé.</p>
+                    </div>
+                    <div class="process-step">
+                        <h4><span class="badge bg-success me-3">3</span> Développement & Implémentation</h4>
+                        <p>Création de la solution avec des points de validation réguliers et tests complets.</p>
+                    </div>
+                    <div class="process-step">
+                        <h4><span class="badge bg-success me-3">4</span> Formation & Support</h4>
+                        <p>Formation de vos équipes et mise en place d'un support post-déploiement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h3 class="mb-3">Prêt à Optimiser Vos Processus ?</h3>
+            <p class="lead mb-4">Discutons de votre projet lors d'un appel découverte gratuit</p>
+            <a href="contact.html" class="btn btn-success btn-lg">
+                <i class="fas fa-phone me-2"></i>Prendre Rendez-vous
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+                    <p>Expert en Excel, Power BI, VBA et KoboToolbox</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Email: ignagalizk@gmail.com</p>
+                    <p>Tél: +235 60 88 71 18</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

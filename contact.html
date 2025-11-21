@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Formateur Certifié Microsoft</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #0078D4;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
+        }
+        
+        .contact-info-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-info-card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 0.2rem rgba(0, 120, 212, 0.25);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chalkboard-teacher me-2"></i>
+                IGNAGALI ZIAKRABA KALZILKI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formations</a>
+                        <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                            <li><a class="dropdown-item" href="formation-excel.html">Formation Excel</a></li>
+                            <li><a class="dropdown-item" href="formation-powerbi.html">Formation Power BI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="consultanceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Consultance</a>
+                        <ul class="dropdown-menu" aria-labelledby="consultanceDropdown">
+                            <li><a class="dropdown-item" href="consultance-excel.html">Consultance Excel</a></li>
+                            <li><a class="dropdown-item" href="consultance-powerbi.html">Consultance Power BI</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenu Gratuit</a>
+                        <ul class="dropdown-menu" aria-labelledby="contenuDropdown">
+                            <li><a class="dropdown-item" href="contenu-modeles.html">Modèles Excel</a></li>
+                            <li><a class="dropdown-item" href="contenu-guide.html">Guide pratique &amp; E-book</a></li>
+                            <li><a class="dropdown-item" href="contenu-tutos.html">Tutoriels Vidéo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Contactez-moi</h1>
+                    <p class="lead">Discutons de votre projet de formation ou de consultance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Formulaire de Contact -->
+                <div class="col-lg-8">
+                    <div class="card shadow">
+                        <div class="card-body p-5">
+                            <h3 class="card-title mb-4">Envoyez-moi un message</h3>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="firstName" class="form-label">Prénom *</label>
+                                        <input type="text" class="form-control form-control-lg" id="firstName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="lastName" class="form-label">Nom *</label>
+                                        <input type="text" class="form-control form-control-lg" id="lastName" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Email *</label>
+                                        <input type="email" class="form-control form-control-lg" id="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="phone" class="form-label">Téléphone</label>
+                                        <input type="tel" class="form-control form-control-lg" id="phone">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="service" class="form-label">Service concerné *</label>
+                                        <select class="form-select form-select-lg" id="service" required>
+                                            <option value="">Sélectionnez un service</option>
+                                            <option value="formation-excel">Formation Excel ou VBA</option>
+                                            <option value="formation-powerbi">Formation Power BI</option>
+                                            <option value="consultance-excel">Consultance Excel ou VBA</option>
+                                            <option value="consultance-powerbi">Consultance Power BI</option>
+                                            <option value="autre">Autre</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="company" class="form-label">Entreprise/Organisation</label>
+                                        <input type="text" class="form-control form-control-lg" id="company">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control form-control-lg" id="message" rows="5" required placeholder="Décrivez votre projet, vos besoins ou posez-moi vos questions..."></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <label class="form-check-label" for="newsletter">
+                                                Je souhaite recevoir les nouvelles ressources gratuites et les offres promotionnelles
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-success btn-lg px-5">
+                                            <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Informations de Contact -->
+                <div class="col-lg-4">
+                    <div class="contact-info-card shadow p-4 mb-4">
+                        <i class="fas fa-envelope contact-icon text-secondary"></i>
+                        <h4>Email</h4>
+                        <p class="mb-1">ignagalizk@gmail.com</p>
+                        <p>ignagalizk@formateur-ms.com</p>
+                    </div>
+
+                    <div class="contact-info-card shadow p-4 mb-4">
+                        <i class="fas fa-phone contact-icon text-success"></i>
+                        <h4>Téléphone</h4>
+                        <p class="mb-1">+235 60 88 71 18</p>
+                        <p>Lun - Ven: 9h00 - 18h00</p>
+                    </div>
+
+                    <div class="contact-info-card shadow p-4 mb-4">
+                        <i class="fas fa-map-marker-alt contact-icon text-danger"></i>
+                        <h4>Zone d'Intervention</h4>
+                        <p class="mb-1">Tchad entière</p>
+                        <p>Présentiel & Distanciel</p>
+                    </div>
+
+                    <div class="contact-info-card shadow p-4">
+                        <i class="fas fa-clock contact-icon text-warning"></i>
+                        <h4>Disponibilité</h4>
+                        <p class="mb-1">Réponse sous 24h</p>
+                        <p>Appel découverte gratuit</p>
+                        <a href="#" class="btn btn-outline-success mt-3 w-100">
+                            <i class="fas fa-calendar me-2"></i>Prendre RDV
+                        </a>
+                    </div>
+
+                    <!-- Réseaux Sociaux -->
+                    <div class="text-center mt-4">
+                        <h5 class="mb-3">Suivez-moi sur les réseaux</h5>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="#" class="btn btn-outline-primary btn-lg">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-danger btn-lg">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-dark btn-lg">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Questions Fréquentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Combien de temps dure une formation typique ?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Les formations durent généralement entre 2 et 5 jours selon le niveau et les objectifs. Nous pouvons adapter la durée selon vos besoins spécifiques.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Proposez-vous des formations en entreprise ?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Oui, je me déplace dans tout le Tchad pour des formations en entreprise. Je propose également des formations à distance via visioconférence.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Les certifications sont-elles incluses dans les formations ?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Je prépare aux certifications Microsoft officielles. Les frais d'examen de certification ne sont pas inclus mais je peux vous accompagner dans leur préparation.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+                    <p>Expert en Excel, Power BI et VBA</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Email: ignagalizk@gmail.com</p>
+                    <p>Tél: +235 60 88 71 18</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script>
+        // Script basique pour le formulaire de contact
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Ici vous ajouterez l'envoi du formulaire vers votre service d'email
+            alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

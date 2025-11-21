@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - Ignagali Ziakraba </title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #198754;
+            --secondary-blue: #198754;
+            --dark-blue: #198754;
+            --light-blue: #EFF6FC;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            padding-top: 76px;
+            background-color: #f8f9fa;
+        }
+        
+        .formation-card {
+            border: none;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            background: white;
+        }
+        
+        .formation-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .formation-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price-tag {
+            background: var(--primary-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (identique à l'index) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-chalkboard-teacher me-2"></i>
+                IGNAGALI ZIAKRABA KALZILKI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="formations.html">Formations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consultance.html">Consultance</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="contenuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenu Gratuit</a>
+                        <ul class="dropdown-menu" aria-labelledby="contenuDropdown">
+                            <li><a class="dropdown-item" href="../contenu-modeles.html">Modèles Excel</a></li>
+                            <li><a class="dropdown-item" href="../contenu-guide.html">Guide pratique &amp; E-book</a></li>
+                            <li><a class="dropdown-item" href="../contenu-tutos.html">Tutoriels Vidéo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="py-5 bg-success text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">Mes Formations</h1>
+                    <p class="lead">Des formations complètes et certifiantes adaptées à vos besoins</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formations Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Formation Excel -->
+                <div class="col-lg-6">
+                    <div class="formation-card shadow h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <i class="fas fa-file-excel formation-icon text-success"></i>
+                                    <h4 class="card-title">Excel Expert</h4>
+                                </div>
+                            </div>
+                            <h6 class="text-success mb-3">📊 Niveaux disponibles : Débutant • Intermédiaire • Expert</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Formules complexes et fonctions avancées</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Tableaux croisés dynamiques</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Power Query et transformation de données</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Création de dashboards interactifs</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Macros et automatisation</li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="badge bg-light text-dark me-2">⌛ Durée: 2-5 jours</span>
+                                <span class="badge bg-light text-dark me-2">👥 Groupes & Individuels</span>
+                                <span class="badge bg-light text-dark">🏢 Présentiel & Distanciel</span>
+                            </div>
+                            <a href="contact.html?formation=excel" class="btn btn-success mt-3 w-100">
+                                <i class="fas fa-info-circle me-2"></i>Demander un programme détaillé
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation Power BI -->
+                <div class="col-lg-6">
+                    <div class="formation-card shadow h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <i class="fas fa-chart-bar formation-icon text-warning"></i>
+                                    <h4 class="card-title">Power BI Complet</h4>
+                                </div>
+                            </div>
+                            <h6 class="text-success mb-3">📈 De la collecte à la visualisation des données</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Connexion aux sources de données</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Transformation avec Power Query</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Langage DAX avancé</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Création de rapports interactifs</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Partage et collaboration</li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="badge bg-light text-dark me-2">⌛ Durée: 3-4 jours</span>
+                                <span class="badge bg-light text-dark me-2">📊 Préparation certification</span>
+                                <span class="badge bg-light text-dark">🎓 Ateliers pratiques</span>
+                            </div>
+                            <a href="contact.html?formation=powerbi" class="btn btn-success mt-3 w-100">
+                                <i class="fas fa-info-circle me-2"></i>Demander un programme détaillé
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formation VBA -->
+                <div class="col-lg-6">
+                    <div class="formation-card shadow h-100">
+                        <div class="card-body p-4">
+                            <div class="d-flex justify-content-between align-items-start mb-3">
+                                <div>
+                                    <i class="fas fa-code formation-icon text-secondary"></i>
+                                    <h4 class="card-title">Programmation VBA</h4>
+                                </div>
+                            </div>
+                            <h6 class="text-success mb-3">⚡ Automatisez vos processus Excel</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fondamentaux de la programmation VBA</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Création et gestion de macros</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Manipulation des objets Excel</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Interfaces utilisateur personnalisées</li>
+                                <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Gestion des erreurs et débogage</li>
+                            </ul>
+                            <div class="mt-4">
+                                <span class="badge bg-light text-dark me-2">⌛ Durée: 4-5 jours</span>
+                                <span class="badge bg-light text-dark me-2">💻 Projets réels</span>
+                                <span class="badge bg-light text-dark">🔧 Support post-formation</span>
+                            </div>
+                            <a href="contact.html?formation=vba" class="btn btn-success mt-3 w-100">
+                                <i class="fas fa-info-circle me-2"></i>Demander un programme détaillé
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Niveaux: Débutant / Moyen / Intermédiaire -->
+    <section id="niveaux" class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">Niveaux de formation</h2>
+            <p class="text-center mb-5">Choisissez le niveau adapté à votre expérience — chaque niveau peut être combiné ou personnalisé.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card formation-card h-100 p-4 text-center">
+                        <i class="fas fa-seedling fa-2x text-success mb-3"></i>
+                        <h5 class="fw-bold">Débutant</h5>
+                        <p class="mb-2">Idéal pour les personnes découvrant Excel ou souhaitant consolider les bases.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Interface et formats</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Formules de base et gestion de données</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Premiers tableaux et graphiques</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark me-2">Durée: 1 jour</span>
+                            <span class="badge bg-light text-dark">Prérequis: Aucun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card formation-card h-100 p-4 text-center">
+                        <i class="fas fa-layer-group fa-2x text-warning mb-3"></i>
+                        <h5 class="fw-bold">Moyen</h5>
+                        <p class="mb-2">Pour les utilisateurs réguliers souhaitant automatiser et analyser efficacement.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Fonctions avancées (recherche, conditionnelles)</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Tableaux croisés dynamiques & segments</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Introduction à Power Query</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark me-2">Durée: 2-3 jours</span>
+                            <span class="badge bg-light text-dark">Prérequis: Connaissances de base</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card formation-card h-100 p-4 text-center">
+                        <i class="fas fa-award fa-2x text-success mb-3"></i>
+                        <h5 class="fw-bold">Intermédiaire / Avancé</h5>
+                        <p class="mb-2">Pour les profils techniques qui veulent automatiser, modéliser et développer des solutions complètes.</p>
+                        <ul class="list-unstyled text-start">
+                            <li><i class="fas fa-check text-success me-2"></i>Power Query & Power Pivot</li>
+                            <li><i class="fas fa-check text-success me-2"></i>DAX et modélisation de données</li>
+                            <li><i class="fas fa-check text-success me-2"></i>VBA : macros, formulaires et automatisation</li>
+                        </ul>
+                        <div class="mt-3">
+                            <span class="badge bg-light text-dark me-2">Durée: 3-5 jours</span>
+                            <span class="badge bg-light text-dark">Prérequis: Connaissances intermédiaires</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h3 class="mb-4">Formation Sur Mesure ?</h3>
+            <p class="lead mb-4">Je peux adapter le contenu et la durée selon vos besoins spécifiques</p>
+            <a href="contact.html" class="btn btn-success btn-lg">
+                <i class="fas fa-calendar-check me-2"></i>Demander un Devis Personnalisé
+            </a>
+        </div>
+    </section>
+                 <h2 class="section-title">Objectifs</h2>
+                <p>À l'issue de la formation, les participants seront capables de :</p>
+                <ul>
+                    <li>Maîtriser les fonctions avancées d'Excel pour analyser et synthétiser des données.</li>
+                    <li>Construire des tableaux croisés dynamiques et des dashboards interactifs.</li>
+                    <li>Nettoyer et transformer des jeux de données avec Power Query.</li>
+                    <li>Utiliser Power Pivot pour modéliser les données et créer des mesures DAX simples.</li>
+                    <li>Automatiser des tâches répétitives avec des macros et créer des outils personnalisés en VBA.</li>
+                </ul>
+
+                    <h2 class="section-title">Programme détaillé</h2>
+                <div class="mb-4">
+                    <h5>Module 1 — Fondamentaux & bonnes pratiques</h5>
+                    <ul>
+                        <li>Interface, formats, gestion des données et validation</li>
+                        <li>Raccourcis et techniques pour gagner du temps</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h5>Module 2 — Formules avancées</h5>
+                    <ul>
+                        <li>INDEX/MATCH, XLOOKUP, fonctions conditionnelles et logiques</li>
+                        <li>Fonctions matricielles et séquences dynamiques</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h5>Module 3 — Tableaux et tableaux croisés dynamiques</h5>
+                    <ul>
+                        <li>Conception de tableaux, filtres, segments et champs calculés</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h5>Module 4 — Power Query & préparation des données</h5>
+                    <ul>
+                        <li>Nettoyage, transformation, consolidation et requêtes paramétrées</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h5>Module 5 — Power Pivot & notions DAX</h5>
+                    <ul>
+                        <li>Modélisation, relations et mesures DAX de base</li>
+                    </ul>
+                </div>
+                <div class="mb-4">
+                    <h5>Module 6 — VBA & automatisation</h5>
+                    <ul>
+                        <li>Enregistrer et écrire des macros, gestion des objets, formulaires et gestion des erreurs</li>
+                        <li>Cas pratiques : automatisation de rapports et envoi d'emails</li>
+                    </ul>
+                </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+                    <p>Expert en Excel, Power BI, VBA et KoboToolbox</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Email: ignagalizk@gmail.com</p>
+                    <p>Tél: +235 60 88 71 18</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

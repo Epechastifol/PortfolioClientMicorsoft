@@ -38,7 +38,7 @@ Soumettez le formulaire via `contact.html` et vérifiez les requêtes dans la co
 Ce projet est distribué sous licence MIT — voir `LICENSE`.
 
 ## Auteur / Contact
-IGNAGALI ZIAKRABA KALZILKI — ignagalizk@gmail.com
+ZIAKRAB SINGTEUBE LEUFERBE — singteubeleuferbe@gmail.com
 
 ---
 

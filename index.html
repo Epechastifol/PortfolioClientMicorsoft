@@ -81,6 +81,26 @@
         -webkit-text-fill-color: transparent;
     }
 
+    /* Domaines d'Expertise - style des icônes */
+    .domaines-section .skill-icon {
+        font-size: 2.5rem;
+        width: 96px;
+        height: 96px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+        color: #fff;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        margin: 0 auto 1rem;
+    }
+
+    .domaines-section h5 {
+        font-weight: 700;
+        margin-top: 0.5rem;
+    }
+
     .stats-number {
         font-size: 3rem;
         font-weight: 700;
@@ -244,7 +264,7 @@
     </section>
 
     <!-- Compétences Section -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light domaines-section">
         <div class="container">
             <h2 class="text-dark section-title">Domaines d'Expertise</h2>
             <div class="row g-4 align-items-center justify-content-center">
@@ -260,7 +280,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="fas fa-code skill-icon"></i>
-                    <h5>Analise des Données</h5>
+                    <h5>Analyse des Données</h5>
                     <p>Macros, développement sur mesure</p>
                 </div>
                 

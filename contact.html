@@ -106,27 +106,29 @@
                     <div class="card shadow">
                         <div class="card-body p-5">
                             <h3 class="card-title mb-4">Envoyez-moi un message</h3>
-                            <form id="contactForm" name="contact" netlify>
+                            <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+                                <input type="hidden" name="form-name" value="contact">
+                                <p class="d-none"><label>Ne pas remplir<input name="bot-field"></label></p>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="firstName" class="form-label">Prénom *</label>
-                                        <input type="text" class="form-control form-control-lg" id="firstName" required>
+                                        <input type="text" name="firstName" class="form-control form-control-lg" id="firstName" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="lastName" class="form-label">Nom *</label>
-                                        <input type="text" class="form-control form-control-lg" id="lastName" required>
+                                        <input type="text" name="lastName" class="form-control form-control-lg" id="lastName" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="email" class="form-label">Email *</label>
-                                        <input type="email" class="form-control form-control-lg" id="email" required>
+                                        <input type="email" name="email" class="form-control form-control-lg" id="email" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label for="phone" class="form-label">Téléphone</label>
-                                        <input type="tel" class="form-control form-control-lg" id="phone">
+                                        <input type="tel" name="phone" class="form-control form-control-lg" id="phone">
                                     </div>
                                     <div class="col-12">
                                         <label for="service" class="form-label">Service concerné *</label>
-                                        <select class="form-select form-select-lg" id="service" required>
+                                        <select name="service" class="form-select form-select-lg" id="service" required>
                                             <option value="">Sélectionnez un service</option>
                                             <option value="formation-excel-vba">Formation Excel ou VBA</option>
                                             <option value="formation-powerbi">Formation Power BI</option>
@@ -137,15 +139,15 @@
                                     </div>
                                     <div class="col-12">
                                         <label for="company" class="form-label">Entreprise/Organisation</label>
-                                        <input type="text" class="form-control form-control-lg" id="company">
+                                        <input type="text" name="company" class="form-control form-control-lg" id="company">
                                     </div>
                                     <div class="col-12">
                                         <label for="message" class="form-label">Message *</label>
-                                        <textarea class="form-control form-control-lg" id="message" rows="5" required placeholder="Décrivez votre projet, vos besoins ou posez-moi vos questions..."></textarea>
+                                        <textarea name="message" class="form-control form-control-lg" id="message" rows="5" required placeholder="Décrivez votre projet, vos besoins ou posez-moi vos questions..."></textarea>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="newsletter">
+                                            <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter" value="yes">
                                             <label class="form-check-label" for="newsletter">
                                                 Je souhaite recevoir les nouvelles ressources gratuites et les offres promotionnelles
                                             </label>
@@ -290,14 +292,6 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.js"></script>
-    <script>
-        // Script basique pour le formulaire de contact
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Ici vous ajouterez l'envoi du formulaire vers votre service d'email
-            alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
-            this.reset();
-        });
-    </script>
+    <!-- Netlify form: no client-side interception to allow normal POST -->
 </body>
 </html>

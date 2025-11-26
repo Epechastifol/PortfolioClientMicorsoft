@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inscription - Formations Excel & Power BI</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">IGNAGALI ZK</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="formation-excel.html">Formations</a></li>
+                <li class="nav-item"><a class="nav-link" href="consultance-excel.html">Consultance</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="mb-3">Inscription aux formations</h1>
+                <p class="lead">Choisissez une ou plusieurs formations ci-dessous et remplissez le formulaire d'inscription. Nous vous contacterons pour confirmer les dates et modalités.</p>
+
+                <form name="inscription-formations" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+                    <input type="hidden" name="form-name" value="inscription-formations">
+                    <p class="visually-hidden"><label>Si vous êtes un robot, laissez vide: <input name="bot-field"></label></p>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nom complet</label>
+                        <input type="text" name="name" class="form-control" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Téléphone</label>
+                            <input type="tel" name="phone" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Organisation (optionnel)</label>
+                        <input type="text" name="organisation" class="form-control">
+                    </div>
+
+                    <h5 class="mt-4">Sélectionnez la/les formation(s)</h5>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="courses" id="course-tcd" value="Maîtrise TCD">
+                            <label class="form-check-label" for="course-tcd">Maîtrise des Tableaux Croisés Dynamiques (TCD)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="courses" id="course-powerquery" value="Power Query Avancé">
+                            <label class="form-check-label" for="course-powerquery">Power Query Avancé</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="courses" id="course-powerpivot" value="Modélisation Power Pivot & DAX">
+                            <label class="form-check-label" for="course-powerpivot">Modélisation avec Power Pivot & DAX</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="courses" id="course-dashboard" value="Conception de Dashboard">
+                            <label class="form-check-label" for="course-dashboard">Conception de Dashboard (design & storytelling)</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="courses" id="course-autre" value="Autre">
+                            <label class="form-check-label" for="course-autre">Autre (précisez dans le message)</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Niveau</label>
+                            <select name="level" class="form-select">
+                                <option value="Débutant">Débutant</option>
+                                <option value="Intermédiaire">Intermédiaire</option>
+                                <option value="Avancé">Avancé</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Préférence de planning</label>
+                            <select name="schedule" class="form-select">
+                                <option value="Semaine">Semaine (lun-ven)</option>
+                                <option value="Weekend">Weekend</option>
+                                <option value="Soir">Soirées</option>
+                                <option value="A définir">À définir</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Date ou période souhaitée (optionnel)</label>
+                        <input type="text" name="preferred_date" class="form-control" placeholder="Ex: début avril / mois de Juin">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message / Précisions</label>
+                        <textarea name="message" class="form-control" rows="5" placeholder="Informations complémentaires, attentes, objectifs..."></textarea>
+                    </div>
+
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter" value="yes">
+                        <label class="form-check-label" for="newsletter">Je souhaite recevoir les informations et offres (newsletter)</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-lg">S'inscrire</button>
+                </form>
+
+            </div>
+
+            <aside class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Aperçu des formations</h5>
+                        <p><strong>Maîtrise TCD</strong> — Nettoyage de données, regroupements, champs calculés, rapports dynamiques et automatisation.</p>
+                        <p><strong>Power Query Avancé</strong> — Requêtes avancées, M, jointures complexes et optimisation des flux de données.</p>
+                        <p><strong>Power Pivot & DAX</strong> — Modélisation, relations, mesures DAX, contexte de calcul et performances.</p>
+                        <p><strong>Conception de Dashboard</strong> — Principes de design, storytelling, KPI et publication vers Power BI.</p>
+                        <a href="contact.html" class="btn btn-outline-primary mt-2">Besoin d'aide pour choisir ?</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h6>Informations pratiques</h6>
+                        <p>Format: présentiel & distanciel. Durée: 1 à 5 jours selon la formation et le niveau.</p>
+                        <p>Tarifs: sur devis — nous contactons pour confirmation.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+                <p>Expert en Excel, Power BI</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p>Email: ignagali.zk@gmail.com</p>
+                <p>Tél: +235 60 88 71 18</p>
+                <p>Tél: +235 98 53 98 78</p>
+                <div class="social-links">
+                    <a href="https://www.LinkedIn.com/in/ignagaliz" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script>
+// Pre-select course checkbox based on ?course= parameter
+document.addEventListener('DOMContentLoaded', function () {
+    try {
+        const params = new URLSearchParams(window.location.search);
+        const course = params.get('course');
+        if (!course) return;
+
+        const mapping = {
+            'tcd': 'Maîtrise TCD',
+            'powerquery': 'Power Query Avancé',
+            'powerpivot': 'Modélisation Power Pivot & DAX',
+            'dashboard': 'Conception de Dashboard',
+            'macrosvba': 'Autre',
+            'gestion-scolaire': 'Autre',
+            'gestion-sante': 'Autre',
+            'excel': 'Autre'
+        };
+
+        const desired = mapping[course] || 'Autre';
+
+        // check matching checkbox by value
+        const checkboxes = document.querySelectorAll('input[name="courses"]');
+        let found = false;
+        checkboxes.forEach(cb => {
+            if (cb.value === desired) {
+                cb.checked = true;
+                found = true;
+            }
+        });
+
+        // if not found, check 'Autre' and add a helpful message
+        if (!found) {
+            const autre = Array.from(checkboxes).find(cb => cb.value === 'Autre');
+            if (autre) autre.checked = true;
+        }
+
+        // If course maps to a specific label for message, prefill message
+        const messageMap = {
+            'macrosvba': 'Inscription pour Initiation aux Macros & VBA',
+            'gestion-scolaire': 'Inscription pour Gestion Scolaire (maquette)',
+            'gestion-sante': 'Inscription pour Gestion Structure Sanitaire (maquette)',
+            'excel': 'Inscription - Formation Excel (générale)'
+        };
+        const msg = messageMap[course];
+        if (msg) {
+            const textarea = document.querySelector('textarea[name="message"]');
+            if (textarea && !textarea.value) textarea.value = msg;
+        }
+
+        // scroll to the form for visibility
+        const form = document.querySelector('form[name="inscription-formations"]');
+        if (form) form.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } catch (e) {
+        console.error('Pré-sélection de cours échouée', e);
+    }
+});
+</script>
+</body>
+</html>

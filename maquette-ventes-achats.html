@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demande de maquette — Gestion Scolaire</title>
+  <title>Demande d'intégration — Ventes & Achats (Commercial)</title>
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="assets/css/all.min.css">
@@ -29,8 +29,8 @@
 
 <header class="py-5 bg-success text-white text-center">
   <div class="container">
-    <h1 class="display-5">Demande de maquette — Gestion Scolaire</h1>
-    <p class="lead">Demandez une maquette personnalisée pour la gestion des élèves, notes, planning et bulletins.</p>
+    <h1 class="display-5">Demande d'intégration — Ventes & Achats (Commercial)</h1>
+    <p class="lead">Demandez l'intégration d'un outil commercial pour suivi des commandes, facturation et analyse du CA.</p>
   </div>
 </header>
 
@@ -38,11 +38,11 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8">
-        <h2>Formulaire de demande de maquette</h2>
-        <p>Remplissez le formulaire ci-dessous pour recevoir une proposition de maquette adaptée à votre établissement.</p>
+        <h2>Formulaire de demande d'intégration</h2>
+        <p>Remplissez ce formulaire pour préciser votre besoin d'intégration Ventes & Achats (process, formats, contraintes).</p>
 
-        <form name="maquette-gestion-scolaire" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
-          <input type="hidden" name="form-name" value="maquette-gestion-scolaire">
+        <form name="maquette-ventes-achats" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="maquette-ventes-achats">
           <p class="visually-hidden"><label>Si vous êtes un robot, laissez vide: <input name="bot-field"></label></p>
 
           <div class="mb-3">
@@ -62,34 +62,44 @@
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Établissement / Organisation</label>
+            <label class="form-label">Entreprise / Organisation</label>
             <input type="text" name="organisation" class="form-control">
           </div>
 
           <div class="mb-3">
             <label class="form-label">Périmètre souhaité</label>
             <select name="scope" class="form-select">
-              <option value="Scolarite">Gestion des élèves & scolarité</option>
-              <option value="Notes">Suivi des notes & bulletins</option>
-              <option value="Emploi du temps">Emploi du temps & planning</option>
-              <option value="Ressources">Gestion des professeurs & ressources</option>
-              <option value="Complet">Solution complète</option>
+              <option value="Commandes">Suivi des commandes</option>
+              <option value="Facturation">Facturation & factures</option>
+              <option value="Stock">Gestion des stocks liée aux ventes</option>
+              <option value="Reporting">Rapports & KPI (CA, marge, clients)</option>
+              <option value="Complet">Solution complète Ventes & Achats</option>
             </select>
           </div>
 
           <div class="mb-3">
+            <label class="form-label">Systèmes existants / formats</label>
+            <input type="text" name="existing_systems" class="form-control" placeholder="Ex: fichiers CSV, ERP X, Shopify...">
+          </div>
+
+          <div class="mb-3">
             <label class="form-label">Contraintes / remarques</label>
-            <textarea name="constraints" class="form-control" rows="4" placeholder="Ressources existantes, format de sortie attendu, règles métier..."></textarea>
+            <textarea name="constraints" class="form-control" rows="4" placeholder="Contraintes techniques, sécurité, fréquence des imports..."></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Volume approximatif de données</label>
+            <input type="text" name="volume" class="form-control" placeholder="Ex: 10k commandes/mois">
           </div>
 
           <div class="mb-3">
             <label class="form-label">Budget estimé (optionnel)</label>
-            <input type="text" name="budget" class="form-control" placeholder="Ex: 3000 - 5000">
+            <input type="text" name="budget" class="form-control" placeholder="Ex: 2000 - 10000">
           </div>
 
           <div class="mb-3">
             <label class="form-label">Date ou période souhaitée</label>
-            <input type="text" name="preferred_date" class="form-control" placeholder="Ex: Mai 2026 / semaine 23">
+            <input type="text" name="preferred_date" class="form-control" placeholder="Ex: Q2 2026">
           </div>
 
           <div class="mb-3">
@@ -110,12 +120,12 @@
       <aside class="col-lg-4">
         <div class="card mb-4">
           <div class="card-body">
-            <h5>Ce que contient la maquette</h5>
+            <h5>Ce que contient l'intégration</h5>
             <ul>
-              <li>Structure des feuilles et modèles (saisie, reporting)</li>
-              <li>Exemples de rapports et bulletins</li>
-              <li>Flux de données et recommandations d'automatisation</li>
-              <li>Estimation de durée et coûts</li>
+              <li>Flux de commandes (import/export)</li>
+              <li>Modèle de facture et calculs (remises, taxes)</li>
+              <li>Tableaux de bord CA, marge, top clients</li>
+              <li>Scripts d'automatisation (Power Query / macros)</li>
             </ul>
             <a href="formation-excel.html" class="btn btn-outline-success mt-2">Retour à la formation Excel</a>
           </div>

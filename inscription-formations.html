@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="assets/css/all.min.css">
 </head>
 <body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="index.html">IGNAGALI ZK</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -187,7 +187,12 @@ document.addEventListener('DOMContentLoaded', function () {
             'macrosvba': 'Autre',
             'gestion-scolaire': 'Autre',
             'gestion-sante': 'Autre',
-            'excel': 'Autre'
+            'excel': 'Autre',
+            // Power BI specific shortcuts
+            'powerbi': 'Autre',
+            'powerbi-debutant': 'Autre',
+            'powerbi-avance': 'Autre',
+            'powerbi-advanced': 'Autre'
         };
 
         const desired = mapping[course] || 'Autre';
@@ -213,7 +218,10 @@ document.addEventListener('DOMContentLoaded', function () {
             'macrosvba': 'Inscription pour Initiation aux Macros & VBA',
             'gestion-scolaire': 'Inscription pour Gestion Scolaire (maquette)',
             'gestion-sante': 'Inscription pour Gestion Structure Sanitaire (maquette)',
-            'excel': 'Inscription - Formation Excel (générale)'
+            'excel': 'Inscription - Formation Excel (générale)',
+            'powerbi': 'Inscription - Formation Power BI (générale)',
+            'powerbi-debutant': 'Inscription - Power BI (Débutant)',
+            'powerbi-avance': 'Inscription - Power BI (Avancé)'
         };
         const msg = messageMap[course];
         if (msg) {

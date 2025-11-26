@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Réserver un diagnostic — Consultance Power BI</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">IGNAGALI ZK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="formation-powerbi.html">Formations</a></li>
+        <li class="nav-item"><a class="nav-link" href="consultance-powerbi.html">Consultance</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="py-5 bg-warning text-dark text-center" style="margin-top: 60px;">
+  <div class="container">
+    <h1 class="display-5">Réserver un diagnostic — Consultance Power BI</h1>
+    <p class="lead">Évaluez votre stratégie data et optimisez vos rapports Power BI avec un diagnostic expert.</p>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>Formulaire de réservation du diagnostic</h2>
+        <p>Remplissez ce formulaire pour réserver votre diagnostic gratuit ou payant avec nos experts Power BI.</p>
+
+        <form name="diagnostic-consultance-powerbi" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="diagnostic-consultance-powerbi">
+          <p class="visually-hidden"><label>Si vous êtes un robot, laissez vide: <input name="bot-field"></label></p>
+
+          <div class="mb-3">
+            <label class="form-label">Nom complet</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Téléphone</label>
+              <input type="tel" name="phone" class="form-control">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Organisation / Entreprise</label>
+            <input type="text" name="organisation" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Fonction / Poste</label>
+            <input type="text" name="position" class="form-control" placeholder="Ex: Responsable BI, Analyste Data, Business Manager">
+          </div>
+
+          <h5 class="mt-4">À propos de votre besoin</h5>
+
+          <div class="mb-3">
+            <label class="form-label">Quel est votre besoin principal ?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="need_type" id="need-audit" value="Audit de votre infrastructure Power BI actuelle">
+              <label class="form-check-label" for="need-audit">Audit de votre infrastructure Power BI actuelle</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="need_type" id="need-optim" value="Optimisation et amélioration des rapports">
+              <label class="form-check-label" for="need-optim">Optimisation et amélioration des rapports existants</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="need_type" id="need-migration" value="Migration Excel vers Power BI">
+              <label class="form-check-label" for="need-migration">Migration Excel vers Power BI</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="need_type" id="need-datamodel" value="Conception de modèle de données avancé">
+              <label class="form-check-label" for="need-datamodel">Conception de modèle de données avancé (DAX, relations)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="need_type" id="need-perf" value="Optimisation des performances">
+              <label class="form-check-label" for="need-perf">Optimisation des performances et scalabilité</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="need_type" id="need-autre" value="Autre">
+              <label class="form-check-label" for="need-autre">Autre (précisez ci-dessous)</label>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Décrivez votre situation actuelle</label>
+            <textarea name="problem_description" class="form-control" rows="4" placeholder="Décrivez votre utilisation actuelle de Power BI, les défis rencontrés, les sources de données, etc."></textarea>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Type de diagnostic</label>
+              <select name="diagnostic_type" class="form-select">
+                <option value="">-- Sélectionner --</option>
+                <option value="Diagnostic gratuit (30 min)">Diagnostic gratuit (30 min)</option>
+                <option value="Diagnostic approfondi payant (2h)">Diagnostic approfondi payant (2h)</option>
+                <option value="Audit complet (demi-journée)">Audit complet (demi-journée)</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Format préféré</label>
+              <select name="format" class="form-select">
+                <option value="Présentiel">Présentiel</option>
+                <option value="Distanciel (Zoom/Teams)">Distanciel (Zoom/Teams)</option>
+                <option value="Hybride">Hybride</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Dates / périodes disponibles</label>
+            <input type="text" name="available_dates" class="form-control" placeholder="Ex: semaine du 15 janvier, mercredi/jeudi, 14h-16h">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Résultats attendus du diagnostic</label>
+            <textarea name="expected_outcomes" class="form-control" rows="3" placeholder="Quels sont vos attentes ? (recommandations, architecture, coûts, faisabilité, délais, etc.)"></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Budget estimé (optionnel)</label>
+            <input type="text" name="budget" class="form-control" placeholder="Ex: 2000 - 10000">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Informations supplémentaires</label>
+            <textarea name="message" class="form-control" rows="4"></textarea>
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter" value="yes">
+            <label class="form-check-label" for="newsletter">Je souhaite recevoir les informations et offres</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg">Réserver mon diagnostic</button>
+        </form>
+
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>Qu'est-ce qu'un diagnostic Power BI ?</h5>
+            <ul>
+              <li>Analyse de votre infrastructure et modèles Power BI</li>
+              <li>Évaluation de vos sources de données et connectivité</li>
+              <li>Identification des points d'amélioration et d'optimisation</li>
+              <li>Recommandations sur architecture et gouvernance data</li>
+              <li>Estimation de coûts, délais et ressources</li>
+              <li>Propositions de feuille de route stratégique</li>
+            </ul>
+            <a href="consultance-powerbi.html" class="btn btn-outline-primary mt-2">Retour à la consultance Power BI</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h6>Contact rapide</h6>
+            <p>Email: ignagali.zk@gmail.com</p>
+            <p>Tél: +235 60 88 71 18</p>
+            <p>Tél: +235 98 53 98 78</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+        <p>Expert en Excel, Power BI</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p>Email: ignagali.zk@gmail.com</p>
+        <p>Tél: +235 60 88 71 18</p>
+        <p>Tél: +235 98 53 98 78</p>
+        <div class="social-links">
+          <a href="https://www.LinkedIn.com/in/ignagaliz" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

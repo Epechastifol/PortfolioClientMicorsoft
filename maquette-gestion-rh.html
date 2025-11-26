@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demande de RDV — Gestion RH (Personnel)</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/all.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">IGNAGALI ZK</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="formation-excel.html">Formations</a></li>
+        <li class="nav-item"><a class="nav-link" href="consultance-excel.html">Consultance</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="py-5 bg-success text-light text-center">
+  <div class="container">
+    <h1 class="display-5">Demande de RDV — Gestion RH (Personnel)</h1>
+    <p class="lead">Planifiez un RDV pour évaluer vos besoins RH : suivi du personnel, congés, paie, planning et rapports.</p>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2>Formulaire de demande de RDV</h2>
+        <p>Remplissez ce formulaire pour demander un RDV de diagnostic et recevoir une proposition de plan d'action.</p>
+
+        <form name="maquette-gestion-rh" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+          <input type="hidden" name="form-name" value="maquette-gestion-rh">
+          <p class="visually-hidden"><label>Si vous êtes un robot, laissez vide: <input name="bot-field"></label></p>
+
+          <div class="mb-3">
+            <label class="form-label">Nom complet</label>
+            <input type="text" name="name" class="form-control" required>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Téléphone</label>
+              <input type="tel" name="phone" class="form-control">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Organisation / Département</label>
+            <input type="text" name="organisation" class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Périmètre souhaité</label>
+            <select name="scope" class="form-select">
+              <option value="SuiviPersonnel">Suivi du personnel</option>
+              <option value="Conges">Gestion des congés</option>
+              <option value="Paie">Paie & déclarations</option>
+              <option value="Planning">Planning & astreintes</option>
+              <option value="Complet">Solution RH complète</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Effectif approximatif</label>
+            <input type="text" name="headcount" class="form-control" placeholder="Ex: 120 employés">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Systèmes existants / formats</label>
+            <input type="text" name="existing_systems" class="form-control" placeholder="Ex: Excel, ERP, CSV...">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Contraintes / remarques</label>
+            <textarea name="constraints" class="form-control" rows="4" placeholder="Sécurité, confidentialité, intégration paie, etc."></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Budget estimé (optionnel)</label>
+            <input type="text" name="budget" class="form-control" placeholder="Ex: 1000 - 8000">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Préférence de date pour le RDV</label>
+            <input type="text" name="preferred_date" class="form-control" placeholder="Ex: semaine du 10/06 ou matinées">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message / Détails supplémentaires</label>
+            <textarea name="message" class="form-control" rows="5"></textarea>
+          </div>
+
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" name="newsletter" id="newsletter" value="yes">
+            <label class="form-check-label" for="newsletter">Je souhaite recevoir les informations et offres</label>
+          </div>
+
+          <button type="submit" class="btn btn-success btn-lg">Demander un RDV</button>
+        </form>
+
+      </div>
+
+      <aside class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>À quoi sert le diagnostic</h5>
+            <ul>
+              <li>Identification des flux RH et points d'amélioration</li>
+              <li>Proposition de maquette et process simplifiés</li>
+              <li>Estimation durée, coûts et priorités</li>
+            </ul>
+            <a href="formation-excel.html" class="btn btn-outline-success mt-2">Retour à la formation Excel</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h6>Contact rapide</h6>
+            <p>Email: ignagali.zk@gmail.com</p>
+            <p>Tél: +235 60 88 71 18</p>
+            <p>Tél: +235 98 53 98 78</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>IGNAGALI ZIAKRABA KALZILKI - Formateur Certifié Microsoft</h5>
+        <p>Expert en Excel, Power BI</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <p>Email: ignagali.zk@gmail.com</p>
+        <p>Tél: +235 60 88 71 18</p>
+        <p>Tél: +235 98 53 98 78</p>
+        <div class="social-links">
+          <a href="https://www.LinkedIn.com/in/ignagaliz" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
